@@ -15,9 +15,10 @@
     <main class="main">
         <header class="header">
             <div class="wrap d-flex">
-                 <!-- <h1 class="logo">
-                    <a href="#"></a>
-                 </h1>  -->
+                 <h1 class="logo">
+                    <a href="#"> <img src="image/e92e58ec9d338a234945ae3d3ffd5be3-removebg-preview (1).png" alt="">
+                    </a>
+                 </h1> 
                  <nav class="menu">
                      <ul>
                         <li><a href="#">Home</a></li>
@@ -725,7 +726,10 @@
 
     <!-- Footer section eND -->
 
-
+   <!-- loder -->
+<div class="loader-container">
+    <img src="image/u.gif" alt="">
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -777,7 +781,13 @@
       $('#portfolio-item').mixltup();
            
        })
-   
+       fadeOut()
+       function loader(){
+            document.querySelector('.loader-container').classList.add('active');
+       }
+          function fadeOut(){
+          setTimeout(loader,4000);
+       }
 
     </script>
 </body>
